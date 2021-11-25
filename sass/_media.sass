@@ -1,0 +1,1846 @@
+@media screen and (min-width: 992px)
+  .button
+    &-first
+      &:hover
+        background-color: $secondary
+        color: $light
+    &-second
+      &:hover
+        transform: translate(10px, 10px)
+  .catalog
+  .card
+    &:hover
+      padding: 0
+      .card__button
+        visibility: visible
+  .nav
+    &__link
+      &:hover
+        color: $secondary
+        &::after
+          content: ''
+          width: 50%
+          height: 2px
+          position: absolute
+          bottom: -7px
+          right: -6px
+          background-color: $secondary
+          transition: 0.2s
+  .header
+    &__phone
+      &:hover
+        color: $secondary
+        &::after
+          content: ''
+          width: 75px
+          height: 2px
+          position: absolute
+          bottom: 0
+          right: 0
+          background-color: $secondary
+          transition: 0.2s
+  .slider
+    &__button
+      position: relative
+      &:hover
+        &::before
+          content: ''
+          position: absolute
+          width: 140px
+          height: 20px
+          left: 5px
+          top: 35px
+          background: linear-gradient(56.35deg, #6EBBFF 12.26%, #38F6FF 85.74%)
+          opacity: 0.4
+          filter: blur(30px)
+      &_prev
+        &::after
+          content: ''
+          position: absolute
+          top: 0
+          bottom: 0
+          left: 0
+          right: 0
+          background: url(../img/slider-arrow-active.svg), linear-gradient(86.45deg, #4481EB -0.39%, #04BEFE 99.61%)
+          background-position: center
+          background-repeat: no-repeat
+          opacity: 0
+          transition: 0.2s
+        &:hover
+          &::after
+            opacity: 0.8
+      &_next
+        &::after
+          content: ''
+          position: absolute
+          top: 0
+          bottom: 0
+          left: 0
+          right: 0
+          background: url(../img/slider-arrow-active.svg), linear-gradient(266.45deg, #4481EB -0.39%, #04BEFE 99.61%)
+          background-position: center
+          background-repeat: no-repeat
+          opacity: 0
+          transition: 0.2s
+        &:hover
+          &::after
+            opacity: 0.8
+  .cleaning
+    &__phone
+      &:hover
+        color: $secondary
+  .testimonials
+    &__card
+      position: relative
+      &:hover
+        padding: 0
+        color: $light
+        .testimonials
+          &__card
+            &-container
+              background: linear-gradient(86.45deg, rgba(68, 129, 235, 0.8) -0.39%, rgba(4, 190, 254, 0.8) 99.61%)
+            &-button
+              color: $light
+            &-client
+              filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.12))
+            &-footer
+              &::before
+                background-color: $light
+        .play
+          &__text
+            color: $light
+  .footer
+    &__icon
+      &:hover
+        fill: $secondary
+        opacity: 1
+  .privacy-policy
+    &:hover
+      color: $secondary
+  .video
+    &__play
+      &-button
+        &:hover
+          background-color: rgba(67, 200, 255, 0.6)
+  .tariff
+    padding-bottom: 0
+    &__button
+      display: none
+      transition: 0.2s
+      color: $light
+      border: 2px solid $light
+      background-color: transparent
+      padding: 13px 37px
+      transform: scaleY(0)
+      margin-bottom: 50px
+  .tariffs
+    &__tariff
+      &:hover
+        padding: 0
+        .tariff
+          background: linear-gradient(86.45deg, rgba(68, 129, 235, 0.8) -0.39%, rgba(4, 190, 254, 0.8) 99.61%)
+          &__title
+            color: $light
+            text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12)
+          &__description
+            color: $light
+            &::after
+              background-color: $light
+          &__button
+            display: inline-block
+            transform: scaleY(1)
+  .contacts
+    &__link
+      &:hover
+        color: $secondary
+
+@media (max-width: 1700px)
+  .main
+    &__title
+      font-size: 36px
+
+@media (max-width: 1366px)
+  .container
+    max-width: 1100px
+  .section
+    &__header
+      &::before
+        right: calc(50% + 356px)
+    &__title
+      &::after
+        left: calc(50% - 1100px/2 + 292px)
+  .main
+    &__slider
+      &-wrapper
+        height: 625px
+    &__container
+      padding-left: 190px
+      padding-top: 150px
+    &__title
+      &::before
+        top: calc(147px + .75em)
+        right: calc(50% + 380px)
+    &__present
+      height: 550px
+      right: calc(50vw - 656px)
+      left: auto
+      bottom: -20px
+    &__static
+      height: 625px
+    &__social
+      &-links
+        margin-bottom: 110px
+    &__pagination
+      margin-bottom: 0
+      margin-top: 72px
+  .geo
+    margin-bottom: 60px
+  .catalog
+    &__cards
+      grid-template-columns: repeat(3, 1fr)
+      grid-column-gap: 10px
+    &__cards a:nth-child(1n+7)
+      display: none
+  .about
+    &__image
+      &-wrapper
+        &_even
+          width: 540px
+          margin-left: 20px
+  .style
+    &__image
+      &-wrapper
+        &_odd
+          width: 44%
+          margin-right: 60px
+        &_even
+          width: 49%
+          margin-left: 60px
+  .card
+    width: 100%
+  .header
+    &__logo
+      width: 220px
+      margin-right: 70px
+    &__nav
+      margin-right: 30px
+    &__link
+      &:not(:last-child)
+        margin-right: 30px
+  .advantage
+    padding-right: 0
+  .slider
+    &__wrapper
+      width: 500px
+      height: 300px
+      &_apartment
+        width: 400px
+        height: 400px
+  .support
+    &__advantages
+      flex-direction: column
+    &__advantage
+      max-width: 440px
+      margin-right: 0
+      &:not(:last-child)
+        margin-right: 0
+        margin-bottom: 20px
+    &__image
+      &-wrapper
+        width: 44%
+        height: 475px
+        margin-bottom: 45px
+        margin-top: auto
+    &__rectangle
+      height: 605px
+  .cleaning
+    &__description
+      min-width: 500px
+      max-width: 500px
+    &__photos
+      height: 190px
+    &__photo
+      &-wrapper
+        &_left
+          width: 180px
+        &_right
+          width: 290px
+    &__images
+      width: 500px
+  .p
+    font-size: 14px
+  .testimonials
+    &__card
+      &-review
+        margin-bottom: 20px
+  .questions
+    &__descriptions
+      padding-right: 30px
+    &__line
+      &_vertical
+        left: calc(50vw - 475px)
+      &_horizontal
+        right: -30px
+    &__bg
+      left: calc(50vw - 656px)
+    &__title
+      &::before
+        font-size: 80px
+        top: -34px
+        right: calc(50vw - 551px)
+      &::after
+        font-size: 80px
+        top: 117px
+        right: calc(50vw - 500px)
+    &__form
+      margin-right: 40px
+  .footer
+    &__nav
+      display: grid
+      grid-template-columns: repeat(2, max-content)
+      row-gap: 20px
+      column-gap: 100px
+    &__link
+      &:not(:last-child)
+        margin-right: 0
+  .design
+    margin-bottom: 130px
+    &__container
+      padding: 70px 70px 80px
+    &__image
+      &-wrapper
+        bottom: -80px
+    &__title
+      &::before
+        font-size: 80px
+        top: -88px
+      &::after
+        font-size: 80px
+        right: 50px
+    &__line
+      bottom: -27px
+    &__rectangle
+      left: 170px
+  .purchase
+  .steps
+    padding-left: 0
+    &__way
+      left: 0
+  .step
+    &_odd
+      margin-left: 0
+      margin-right: -15px
+    &_even
+      margin-left: -15px
+    &__text
+      font-size: 12px
+    &__description
+      &_even
+        max-width: 325px
+  .contacts
+    &__header
+      &::before
+        right: calc(50% + 495px)
+    &__title
+      &::after
+        left: calc(50% - 407px)
+    &__map
+      width: 50%
+      margin-right: 100px
+  .apartment
+    &__header
+      &::before
+        right: calc(50% + 500px)
+
+@media (max-width: 1140px)
+  .container
+    max-width: 95%
+  .section
+    &__header
+      padding-left: 8rem
+      &::before
+        right: calc(50% + 222px)
+    &__title
+      font-size: 2rem
+      &::after
+        font-size: 4rem
+        left: calc(50% - 50vw + 446px)
+  .main
+    &__title
+      &::before
+        width: 195px
+        right: auto
+  .header
+    &__menu
+      position: absolute
+      flex-direction: column
+      align-items: flex-start
+      right: 0
+      top: 0
+      background: $bg
+      max-width: 100%
+      transform: translateY(-100%)
+      overflow: hidden
+      z-index: 500
+      transition: 0.3s
+      height: max-content
+      &_active
+        transform: translateY(0)
+      &-close
+        width: 50px
+        height: 50px
+        position: absolute
+        top: 15px
+        right: 15px
+        display: flex
+        justify-content: center
+        align-items: center
+        z-index: 600
+        color: $primary
+        font-size: 60px
+        padding: 10px
+        cursor: pointer
+    &__nav
+      flex-direction: column
+      align-items: flex-start
+      margin: 60px 25px 0 25px
+      padding-top: 0
+    &__link
+      margin: 0
+      margin-bottom: 18px
+      padding: 11px
+      &:not(:last-child)
+        margin-right: 0
+    &__phone
+      margin: 0px 29px 29px 29px
+      padding: 11px
+  .burger
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 55px
+    height: 50px
+    padding: 10px
+    cursor: pointer
+    &__item
+      border: 2px solid $secondary
+      background-color: $secondary
+  .design
+    &__container
+      padding: 6%
+  .card
+    &__container
+      padding-right: 30px
+  .questions
+    &__header
+      padding-left: 0
+    &__line
+      &_vertical
+        left: calc(2.5% + 75px)
+      &_horizontal
+    &__rectangle
+      padding-left: 40px
+    &__bg
+      left: -7%
+    &__title
+      &::before
+        right: calc(2.5% - 1px)
+      &::after
+        right: calc(2.5% + 50px)
+  .form
+    min-width: 380px
+  .styles
+    padding-top: 45px
+    margin-bottom: 55px
+  .style
+    &:nth-child(n)
+      margin-bottom: 70px
+    &:nth-child(n + 8)
+      margin-bottom: 22px
+    &__image
+      &-wrapper
+        height: 330px
+    &__container
+      align-items: center
+    &__description
+      padding-top: 0
+      &_8
+        padding-top: 70px
+  .h2-title
+    font-size: 34px
+    &::after
+      font-size: 2em
+  .h3-title
+    font-size: 16px
+  .step
+    &__title
+      font-size: 16px
+    &__description
+      &_odd
+        margin-right: 15px
+      &_even
+        margin-left: 15px
+    &__text
+    &s
+      &__way
+        display: none
+  .apartment
+    &__header
+      &::before
+        right: calc(50% + 360px)
+        top: 25px
+    &__description
+      flex-direction: column
+    &__rectangle
+      top: 650px
+    &__line
+      height: 590px
+      top: 480px
+    &__description
+      padding-left: 0
+      &-body
+        margin-right: auto
+    &__button
+      margin-bottom: 20px
+      margin-left: auto
+      margin-right: auto
+  .slider
+    &__buttons
+      &_apartment
+        margin-bottom: 40px
+  .contacts
+    &__map
+      height: 450px
+      margin-right: 80px
+    &__line
+      top: -65px
+      bottom: -120px
+    &__header
+      &::before
+        right: auto
+        width: 210px
+    &__title
+      &::after
+        left: calc(50% - 253px)
+    &__wrapper
+    &__rectangle
+      top: 45px
+      bottom: 45px
+
+@media (max-width: 1100px)
+  .section
+    padding-top: 0
+    &__header
+      padding-left: 0
+      &::before
+        right: auto
+        width: 222px
+    &__title
+      &::before
+        display: none
+      &::after
+        display: none
+  .main
+    &__slider
+      &-wrapper
+        height: 620px
+    &__container
+      padding-left: 130px
+      padding-top: 170px
+    &__title
+      font-size: 32px
+      &::before
+        top: calc(170px + .75em)
+        width: 135px
+    &__text
+      font-size: 14px
+      &-p
+        &::before
+          width: 14px
+    &__present
+      right: 40px
+
+    &__static
+      height: 620px
+    &__present
+      height: 500px
+      width: 500px
+  .about
+    &__image
+      &-wrapper
+        width: 50%
+        height: 400px
+        &_catalog
+          height: 350px
+        &_odd
+          margin-top: 0
+          margin-right: 30px
+    &__description
+      &-button
+        font-size: 12px
+        margin-bottom: 40px
+      &_repair
+        margin-bottom: 50px
+    &__rectangle
+      height: 500px
+      &_apartment
+        height: 195px
+    &__line
+      bottom: 70px
+      &_apartment
+        bottom: 215px
+    &__body
+      &_catalog
+        margin-bottom: 100px
+  .style
+    &__image
+      &-wrapper
+        height: 250px
+  .advantage
+    &:not(:last-child)
+      margin-bottom: 25px
+    &__image
+      &-wrapper
+        height: 60px
+        width: 60px
+        margin-right: 20px
+    &__title
+      font-size: 16px
+    &__text
+      font-size: 12px
+  .p
+    font-size: 12px
+    &:not(:last-child)
+      margin-bottom: 10px
+  .slider
+    &__wrapper
+      width: 450px
+    &-preview
+      margin-top: 20px
+    &__preview
+      &-wrapper
+        height: 120px
+  .repair
+    margin-bottom: 40px
+    &__rectangle
+      height: 90%
+    &__line
+      height: 700px
+  .design
+    &__image
+      &-wrapper
+        right: 380px
+  .support
+    margin-bottom: 30px
+    &__image
+      &-wrapper
+        width: 390px
+        height: 450px
+        margin-right: 40px
+        margin-bottom: 40px
+        margin-top: 0
+        align-self: flex-end
+    &__text
+      margin-bottom: 20px
+    &__advantages
+      margin-bottom: 25px
+    &__advantage
+      max-width: 100%
+      flex-direction: row
+    &__list
+      &-item
+        font-size: 16px
+    &__button
+      margin: auto
+    &__rectangle
+      height: 400px
+    &__line
+      bottom: 100px
+  .cleaning
+    &__body
+      flex-direction: column
+      align-items: flex-start
+    &__text
+      margin-bottom: 20px
+    &__photos
+      display: none
+    &__images
+      align-self: flex-end
+    &__photo
+      &-wrapper
+        &_top
+          display: none
+        &_bottom
+          margin-top: -120px
+          margin-right: 100px
+          z-index: -1
+  .testimonials
+    &__cards
+      grid-template-columns: repeat(3, 1fr)
+    &__card
+      &:nth-child(n + 4)
+        display: none
+  .questions
+    margin-bottom: 60px
+    &__bg
+      top: -100px
+      bottom: -50px
+      left: 0
+      &-image
+        height: 550px
+    &__title
+      &::before
+        display: block
+        top: -87px
+        left: auto
+      &::after
+        display: block
+        top: 76px
+        left: auto
+    &__form
+      margin-top: 120px
+      min-width: 300px
+    &__text
+      font-size: 14px
+      margin-bottom: 10px
+    &__icon
+      &-wrapper
+        width: 70px
+        height: 70px
+    &__line
+      &_vertical
+        display: none
+  .form
+    &__input
+      margin-bottom: 20px
+      font-size: 12px
+      &::placeholder
+        font-size: 12px
+    &__button
+      font-size: 14px
+      padding: 12px 35px
+  .policy
+    font-size: 12px
+  .footer
+    &__nav
+      column-gap: 50px
+      margin-right: 0
+  .purchase
+    &__rectangle
+      &_repair
+        display: none
+    &__line
+      display: none
+  .steps
+    max-height: 100%
+    flex-wrap: nowrap
+  .step
+    order: 0
+    margin: 0 0 40px 0
+    &_odd
+      align-self: flex-start
+      margin-left: 200px
+    &_even
+      align-self: flex-end
+      margin-right: 200px
+    &__image
+      &-wrapper
+    &__description
+      max-width: 325px
+  .video
+    width: 400px
+    height: 300px
+  .apartment
+    &__container
+      margin-bottom: 50px
+    &__description
+      padding-left: 0
+      &-body
+        margin-right: 20px
+  .tariffs
+    &__wrapper
+      grid-gap: 10px
+  .tariff
+    width: 310px
+    padding-top: 25px
+    &__title
+      font-size: 24px
+      margin-bottom: 18px
+    &__price
+      padding: 19px 51px 4px
+      margin-bottom: 28px
+      &-text
+        font-size: 14px
+        &_strong
+          font-size: 24px
+    &__descriptions
+      padding: 0 33px
+  .h2-title
+  .h3-title
+    font-size: 16px
+  .contacts
+    padding-top: 120px
+    &__header
+      &::before
+        width: 85px
+    &__map
+      height: 350px
+      width: 40%
+      margin-right: 40px
+    &__wrapper
+    &__item
+      &:not(:last-child)
+        margin-bottom: 30px
+    &__rectangle
+      top: 25px
+      bottom: 25px
+    &__line
+      top: -45px
+      bottom: -80px
+  .apartment
+    &__header
+      &::before
+        width: 88px
+
+@media (max-width: 1000px)
+  .background
+    &-rectangle
+      display: none
+    &-line
+      display: none
+  .section
+    &__title
+  .button
+    &-second
+      font-size: 12px
+      padding: 10px 30px
+  .main
+    &__slider
+      &-wrapper
+        height: 520px
+    &__container
+      padding-left: 150px
+      padding-top: 150px
+    &__title
+      font-size: 24px
+      &::before
+        top: calc(149px + .75em)
+        width: 155px
+    &__static
+      height: 520px
+    &__social
+      &-links
+        margin-bottom: 40px
+  .about
+    margin-bottom: 40px
+    &__image
+      &-wrapper
+        width: 40%
+        height: 300px
+        &_odd
+          width: 45%
+        &_even
+          width: 45%
+    &__description
+      &-button
+        font-size: 12px
+        margin-bottom: 40px
+    &__pagination
+      margin-top: 30px
+      height: 240px
+      &-slide
+        height: 80px
+        font-size: 18px
+        padding-right: 12px
+      &_slide
+        &-next
+          padding-right: 13px
+        &-active
+          padding-right: 14px
+          font-size: 36px
+    &__text
+      max-height: 110px
+      &_catalog
+        max-height: 100%
+        font-size: 12px
+      &_apartment
+        max-height: 100%
+    &__body
+      &_catalog
+        margin-bottom: 75px
+      &_odd
+        &_repair
+          margin-bottom: 30px
+  .style
+    &:nth-child(n)
+      margin-bottom: 20px
+    &__description
+      margin: 0
+    &__image
+      &-wrapper
+        margin-top: 40px
+        margin-bottom: 40px
+    &__description
+      &_8
+        padding: 0
+  .advantage
+    &__image
+      &-wrapper
+        width: 50px
+        height: 60px
+        min-width: 50px
+    &__title
+      font-size: 14px
+  .repair
+    &__button
+      margin-bottom: 16px
+  .slider
+    &__wrapper
+      width: 350px
+      height: 250px
+      &_apartment
+        height: 400px
+        margin-top: 0
+    &__buttons
+      display: none
+  .design
+    &__rectangle
+      display: block
+      left: 13%
+    &__image
+      &-wrapper
+        right: 300px
+  .cleaning
+    &__description
+      min-width: 100%
+      max-width: 100%
+    &__text
+      max-width: 100%
+      margin-right: 80px
+    &__advantages
+      margin-right: 80px
+    &__images
+      align-self: center
+      margin: 0
+    &__photo
+      &-wrapper
+        &_bottom
+          margin: 0
+  .testimonials
+    &__card
+      &-client
+        font-size: 16px
+      &-date
+        font-size: 14px
+      &-service
+        font-size: 14px
+      &-review
+        font-size: 12px
+      &-button
+        font-size: 12px
+  .questions
+    &__descriptions
+      padding-right: 0
+    &__rectangle
+      flex-direction: column-reverse
+      align-items: center
+      justify-content: space-between
+      padding: 30px
+      align-items: center
+    &__form
+      margin-top: 0
+      margin-right: 0
+      width: 300px
+      padding-left: 15px
+      padding-right: 15px
+    &__text
+      font-size: 14px
+      padding: 0
+      width: 300px
+    &__header
+      padding-top: 0
+    &__title
+      &::before
+        font-size: 66px
+      &::after
+        font-size: 66px
+        right: calc(2.5% + 50px)
+    &__bg
+      left: -50px
+      &-image
+        height: 730px
+  .form
+    &__input
+      margin-left: 0
+  .policy
+    padding: 0
+  .footer
+    &__nav
+      grid-template-columns: 1fr
+    &__social
+      &-links
+        flex-direction: column
+        min-width: 26px
+        height: 100%
+        padding: 0
+        & a:not(:last-child)
+          margin-bottom: 17px
+  .step
+    &_odd
+      margin-left: 10%
+    &_even
+      margin-right: 10%
+  .apartment
+    &__price
+      margin-bottom: 15px
+    &__address
+      margin-bottom: 15px
+    &__text
+      margin-bottom: 15px
+    &__button
+      margin-bottom: 15px
+  .characteristics
+    padding: 10px 0
+    margin-bottom: 15px
+  .video
+    width: 400px
+    margin-right: 15px
+  .tariffs
+    margin-bottom: 110px
+    &__wrapper
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+  .h2-title
+    font-size: 30px
+  .h3-title
+    font-size: 16px
+  .contacts
+    &__rectangle
+      display: block
+
+@media (max-width: 920px)
+  .main
+    &__container
+      padding-left: 90px
+      padding-top: 130px
+    &__title
+      &::before
+        top: calc(129px + .75em)
+        width: 90px
+
+@media (max-width: 850px)
+  .section
+    &__title
+      font-size: 1.5rem
+      &::after
+        font-size: 3.5rem
+  .button
+    &-first
+      font-size: 12px
+  .main
+    &__present
+      height: 410px
+      width: 44%
+  .catalog
+    &__card
+      height: 400px
+      padding: 10px 0
+  .repair
+    &__description
+      padding-left: 0
+    &__text
+      margin-bottom: 20px
+      &-wrapper
+        margin-right: 40px
+  .support
+    &__image
+      &-wrapper
+        width: 40%
+        height: 350px
+    &__list
+      &-item
+        font-size: 14px
+  .questions
+    &__rectangle
+      flex-direction: column-reverse
+      align-items: center
+      justify-content: space-between
+      width: 75%
+      flex-shrink: 1
+    &__form
+      margin: 0
+    &__descriptions
+      margin-bottom: 20px
+    &__icon
+      &-wrapper
+        width: 50px
+        height: 50px
+  .apartment
+    &__price
+      &_full
+        font-size: 26px
+      &_meter
+        font-size: 14px
+    &__address
+      &-full
+        font-size: 16px
+  .characteristics
+    &__characteristic
+      font-size: 20px
+      &_small
+        font-size: 14px
+  .slider
+    &__wrapper
+      &_apartment
+        height: 300px
+  .h2-title
+    font-size: 28px
+    &::after
+      display: none
+    &::before
+      display: none
+  .h3-title
+    font-size: 16px
+  .h4-title
+    font-size: 14px
+  .p
+    font-size: 12px
+  .contacts
+    margin-bottom: 80px
+    &__container
+      flex-direction: column-reverse
+    &__wrapper
+      margin-bottom: 30px
+    &__icon
+      width: 50px
+      height: 50px
+    &__item
+      &:not(:nth-last-child)
+        margin-bottom: 30px
+    &__map
+      width: 100%
+      margin: 0 auto
+    &__rectangle
+      display: none
+    &__text
+      font-size: 16px
+  .purchase
+    margin-bottom: 30px
+    &__header
+      margin-bottom: 30px
+  .step
+    margin-bottom: 40px
+  .tariffs
+    margin-bottom: 55px
+
+@media (max-width: 768px)
+  .header
+    &__logo
+      width: 190px
+  .burger
+    width: 50px
+    height: 45px
+  .section
+    &__container
+      padding-left: 0
+    &__header
+      padding-left: 0
+      margin-bottom: 30px
+      &::before
+        display: none
+  .card
+    &__title
+      font-size: 12px
+    &__description
+      font-size: 12px
+    &__price
+      font-size: 14px
+  .testimonials
+    &__cards
+      grid-template-columns: repeat(2, 1fr)
+      grid-column-gap: 10px
+    &__card
+      &:nth-child(n + 3)
+        display: none
+  .design
+    margin: 70px 0
+    &__rectangle
+      left: 0
+      right: 0
+      bottom: 60px
+    &__container
+      flex-direction: column-reverse
+      padding: 20px 20%
+    &__image
+      &-wrapper
+        position: relative
+        top: auto
+        bottom: -20px
+    &__description
+      max-width: 100%
+      margin-left: auto
+      margin-right: auto
+  .step
+    &_odd
+      margin-left: 0
+    &_even
+      margin-right: 0
+  .video
+    width: 250px
+    height: 180px
+  .cleaning
+    &__text
+      margin-left: 0
+    &__advantages
+      margin-left: 0
+  .support
+    &__image
+      &-wrapper
+        display: none
+  .h2-title
+    font-size: 28px
+  .h3-title
+    font-size: 16px
+  .h4-title
+    font-size: 14px
+  .p
+    font-size: 12px
+  .purchase
+    &__header
+      margin-bottom: 30px
+  .main
+    &__slider
+      &-slide
+        height: 520px
+        background-position: right -212px bottom 36px
+  .repair
+    &__title
+      margin-bottom: 0
+    &__description
+      display: flex
+      flex-direction: column
+    &__text
+      max-width: 100%
+      &-wrapper
+        margin: 0
+    &__button
+      margin-bottom: 0
+  .slider
+    &__wrapper
+      margin-top: 45px
+
+@media (max-width: 760px)
+  .button
+    &-first
+      padding: 10px 20px
+  .section
+    &__container
+      padding-left: 0
+    &__header
+      padding-left: 0
+      margin-bottom: 15px
+  .main
+    &__container
+      padding-left: 100px
+    &__title
+      font-size: 22px
+      &::before
+        right: calc(100% - 95px)
+    &__text
+      padding-right: 100px
+    &__present
+      height: 380px
+    &__slider
+      &-button
+        margin-left: 0px
+        margin-top: 40px
+  .catalog
+    &__cards
+      grid-template-columns: repeat(2, 1fr)
+      gap: 10px
+    &__cards a:nth-child(1n+5)
+      display: none
+    &__card
+      height: 450px
+      &__title
+        font-size: 14px
+      &__description
+        font-size: 14px
+      &__price
+        font-size: 16px
+  .about
+    &__image
+      &-wrapper
+        width: 35%
+        height: 260px
+        margin-right: 20px
+        margin-top: 20px
+    &__description
+      &-button
+        margin-bottom: 20px
+      &_even
+        margin-left: 0
+    &__body
+      &_catalog
+        margin-bottom: 20px
+  .style
+    &__image
+      &-wrapper
+        width: 40%
+        margin-top: 30px
+        margin-bottom: 30px
+  .advantage
+    &__image
+      &-wrapper
+        width: 40px
+        height: 40px
+        min-width: 40px
+        margin-right: 20px
+    &__title
+      padding-top: 0
+      font-size: 12px
+    &:not(:last-child)
+      margin-bottom: 15px
+  .slider
+    &__wrapper
+      width: 250px
+      height: 200px
+      &_apartment
+        margin-top: 15px
+        height: 250px
+    &-preview
+      height: 80px
+  .design
+  .cleaning
+    &__text
+    &__advantages
+    &__photo
+      &-wrapper_bottom
+        width: 90%
+    &__image
+      width: 100%
+  .questions
+    &__rectangle
+    &__title
+      margin-bottom: 0
+      &::before
+        font-size: 40px
+        top: -43px
+        right: 30px
+      &::after
+        font-size: 40px
+        top: 45px
+        right: 50px
+  .video
+    margin-top: 0
+  .h2-title
+    font-size: 28px
+  .h3-title
+    font-size: 16px
+  .h4-title
+    font-size: 14px
+  .p
+    font-size: 12px
+  .purchase
+    &__header
+      margin-bottom: 30px
+
+@media (max-width: 650px)
+  .social
+    &-link
+      width: 20px
+      height: 20px
+  .burger
+    width: 50px
+    height: 45px
+  .header
+    &__logo
+      width: 170px
+  .main
+    margin-bottom: 20px
+    &__pagination
+      display: none
+    &__container
+      padding-left: 100px
+      padding-top: 100px
+      padding-right: 100px
+    &__title
+      font-size: 18px
+      margin-bottom: 10px
+      &::before
+        right: auto
+        top: calc(98px + .75em)
+        width: 97px
+    &__text
+      font-size: 12px
+      margin-left: 16px
+      padding-right: 0
+      &-p
+        &:not(:last-child)
+          margin-bottom: 5px
+        &::before
+          width: 8px
+          left: -16px
+    &__slider
+      &-wrapper
+        height: 420px
+      &-button
+        margin-top: 20px
+      &-slide
+        height: 420px
+    &__static
+      height: 90%
+    &__social
+      &-link
+        &:not(:last-child)
+          margin-bottom: 20px
+    &__present
+      bottom: 0
+      height: auto
+      left: 55%
+      right: 0%
+      width: auto
+    &__pagination
+      height: 180px
+      width: 70px
+      margin-top: auto
+      margin-bottom: 20px
+      &-slide
+        height: 60px
+      &_slide
+        font-size: 16px
+        &-active
+          font-size: 36px
+  .geo
+    margin-bottom: 10px
+    &__icon
+      width: 20px
+      height: 20px
+  .catalog
+    &__card
+      height: 400px
+  .design
+    &__container
+      padding: 20px calc(50vw - 190px)
+  .style
+    margin: 0
+    &__container
+      &_odd
+        flex-direction: column-reverse
+      &_even
+        flex-direction: column
+    &__image
+      &-wrapper
+        width: 100%
+        height: 330px
+        margin: 20px 0
+  .questions
+    &__rectangle
+      margin-left: auto
+    &__bg
+      left: -90px
+  .footer
+    &__logo
+      width: 180px
+    &__link
+      font-size: 12px
+  .step
+    width: 100%
+    min-width: auto
+    &__description
+      max-width: 100%
+      margin-left: 0
+      margin-right: 0
+    &__image
+      &-wrapper
+        margin: 0 20px auto
+  .h2-title
+    font-size: 28px
+  .h3-title
+    font-size: 16px
+  .h4-title
+    font-size: 14px
+  .p
+    font-size: 12px
+  .contacts
+    padding-top: 100px
+    &__text
+      font-size: 14px
+
+@media (max-width: 600px)
+  .apartment
+    &__description
+      flex-direction: column
+  .about
+    &__body
+      &_apartment
+        flex-direction: column-reverse
+      &_catalog
+        margin-bottom: 20px
+    &__image
+      &-wrapper
+        display: none
+    &__description
+      &_catalog
+        margin-top: 0
+        width: 100%
+    &__text
+      &_catalog
+        margin-bottom: 0
+  .video
+    width: 100%
+  .h2-title
+    font-size: 28px
+  .h3-title
+    font-size: 16px
+  .h4-title
+    font-size: 14px
+  .p
+    font-size: 12px
+
+@media (max-width: 520px)
+  .logo
+    &__image
+      object-fit: contain
+  .section
+    &__header
+      padding-left: 0
+    &__container
+      padding-left: 0
+    &__title
+      font-size: 18px
+  .header
+    &__logo
+      width: 150px
+  .burger
+    width: 43px
+    height: 40px
+  .main
+    margin-bottom: 50px
+    &__container
+      padding-left: 80px
+      padding-top: 90px
+      padding-right: 80px
+    &__slider
+      &-slide
+        background-position: right -212px bottom 0
+    &__title
+      font-size: 16px
+      margin-bottom: 15px
+      &::before
+        top: calc(89px + .75em)
+        width: 70px
+    &__pagination
+      &_slide
+        font-size: 16px
+        &-active
+          font-size: 30px
+    &__present
+    &__static
+      height: 100%
+  .geo
+    &__text
+      font-size: 12px
+  .about
+    &__apartment
+      margin-bottom: 0
+    &__image
+      &-wrapper
+        width: 25%
+    &__container
+      &_apartment
+        padding-bottom: 0
+  .style
+    &__image
+      &-wrapper
+        height: 250px
+  .advantage
+    &__image
+      &-wrapper
+        width: 35px
+        height: 35px
+        min-width: 35px
+  .catalog
+    &__card
+      height: 350px
+  .slider
+    &__wrapper
+      width: 100%
+    &-preview
+      height: 70px
+  .design
+    margin-bottom: 40px
+  .support
+    &__image
+      &-wrapper
+        display: none
+  .cleaning
+    margin-bottom: 20px
+    &__images
+      width: 55%
+    &__text
+      margin-left: 0
+      margin-right: 0
+    &__advantages
+      margin-left: 0
+      margin-right: 0
+    &__photo
+      &-wrapper
+        &_bottom
+          width: 100%
+  .testimonials
+    margin-bottom: 20px
+    &__cards
+      grid-template-columns: 1fr
+    &__card
+      &-container
+        min-height: 100%
+      &:nth-child(n+3)
+        display: block
+      &:nth-child(n+4)
+        display: none
+    &__header
+      &-link
+        &_top
+          display: none
+        &_bottom
+          display: flex
+          justify-content: center
+          margin: auto
+          min-width: 165px
+  .questions
+    &__bg
+      top: -15px
+      &-image
+        height: 600px
+    &__form
+      min-width: 100%
+  .footer
+    &__main
+      flex-direction: column
+      align-items: center
+      flex-wrap: wrap
+      height: 180px
+      align-content: space-between
+      margin-bottom: 10px
+    &__nav
+      row-gap: 1em
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      justify-content: space-between
+      padding-top: 0
+    &__last
+      flex-direction: column
+      align-items: flex-start
+  .purchase
+    padding-top: 20px
+  .step
+    &__image
+      &-wrapper
+        width: 100px
+        height: 100px
+    &__title
+      font-size: 14px
+  .video
+    width: 100%
+  .h2-title
+    font-size: 28px
+  .h3-title
+    font-size: 16px
+  .h4-title
+    font-size: 14px
+  .p
+    font-size: 12px
+  .button
+    &-second
+      padding: 10px 17px
+  .apartment
+    &__title
+      margin-right: 0
+    &__header
+      &-link
+        display: none
+
+@media (max-width: 440px)
+  .button
+    &-first
+      padding: 7px 17px
+      font-size: 10px
+  .section
+    &__header
+      padding-left: 0
+      margin-bottom: 15px
+    &__title
+      font-size: 18px
+  .main
+    &__container
+      padding-top: 90px
+      padding-left: 67px
+      padding-right: 67px
+    &__slider
+      &-wrapper
+        height: 500px
+      &-slide
+        height: 550px
+        background-position: right -250px bottom 0
+    &__title
+      font-size: 14px
+      &::before
+        display: none
+    &__text
+      padding-right: 10px
+    &__present
+      top: 49%
+      bottom: 40px
+      left: 20%
+      right: 20%
+  .geo
+    &__text
+      font-size: 10px
+  .catalog
+    &__cards
+      grid-template-columns: 1fr
+    &__card
+      height: 450px
+  .questions
+    &__bg
+      display: none
+    &__rectangle
+      width: 100%
+    &__title
+      &::before
+        font-size: 33px
+        top: -36px
+      &::after
+        font-size: 33px
+    &__text
+      padding: 0
+  .design
+    &__text
+      font-size: 14px
+      padding-left: 10px
+      padding-right: 10px
+  .h2-title
+    font-size: 28px
+  .h3-title
+    font-size: 16px
+  .h4-title
+    font-size: 14px
+  .p
+    font-size: 12px
+  .form
+    &__button
+      &-wrapper
+        margin-left: auto
+        margin-right: auto
+  .purchase
+    &__header
+      margin-bottom: 30px
+  .testimonials
+    &__header
+      &-link
+        &_bottom
+          min-width: 140px
+          min-height: 38px
+          align-items: center
+  .tariff
+    &__button
+      font-size: 12px
+      padding: 10px 20px
+
+@media (max-width: 370px)
+  .button
+    &-first
+      padding: 5px 10px
+      font-size: 10px
+  .section
+    &__header
+    &__title
+      font-size: 16px
+  .header
+    &__container
+      padding-left: 0
+      padding-top: 10px
+  .main
+    &__container
+      padding-right: 43px
+      padding-left: 43px
+    &__title
+
+      margin-bottom: 7px
+    &__pagination
+      &-slide
+        font-size: 14px
+      &_slide
+        &-active
+          font-size: 22px
+    &__button
+      &-second
+        padding: 10px 15px
+  .catalog
+    &__card
+      height: 350px
+  .about
+    &__image
+      &-wrapper
+        display: none
+    &__body
+      margin-bottom: 10px
+    &__description
+      margin-top: 0
+      margin-bottom: 0
+      &__catalog
+        margin-bottom: 20px
+    &__text
+      &_catalog
+  .style
+    &__image
+      &-wrapper
+        height: 200px
+  .slider
+    &__preview
+      height: 40px
+  .design
+  .questions
+    &__title
+      &::before
+        font-size: 30px
+        right: 8px
+        top: -32px
+  .video
+    display: block
+  .h2-title
+    font-size: 28px
+  .h3-title
+    font-size: 16px
+  .h4-title
+    font-size: 14px
+  .p
+    font-size: 12px
+  .step
+    margin-bottom: 40px
+    &__image
+      &-wrapper
+        width: 80px
+        height: 80px
+        margin: 0
+
+    &__description
+      margin: 0
+      &_odd
+        margin-right: 20px
+      &_even
+        margin-left: 20px
+  .contacts
+    padding-top: 80px
+  .tariff
+    &__button
+      font-size: 12px
+      padding: 10px 20px
+
+.about
+  &__text
+    &_active
+      max-height: 100%

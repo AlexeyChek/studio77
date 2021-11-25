@@ -1,0 +1,142 @@
+.apartment
+  margin-top: 114px
+  margin-bottom: 0
+  &__header
+    &::before
+      top: 50%
+      left: 0
+      right: calc(50% + 595px)
+    &-container
+      padding-left: 79px
+  &__title
+    margin-bottom: 0
+    margin-right: 20px
+    &::after
+      content: 'Квартира-студия'
+      left: calc(50% - 494px)
+  &__header
+    margin-bottom: 30px
+  &__description
+    &-body
+      width: 100%
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      margin-right: 76px
+  &__price
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    flex-wrap: wrap
+    margin-bottom: 30px
+    &_full
+      font-weight: 600
+      font-size: 34px
+      line-height: 150%
+      color: $secondary
+    &_meter
+      font-weight: normal
+      font-size: 18px
+      line-height: 150%
+      color: rgba(51, 107, 156, 0.6)
+      margin-bottom: 5px
+      margin-left: auto
+  &__address
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin-bottom: 30px
+    &-full
+      font-weight: 600
+      font-size: 18px
+      line-height: 150%
+      margin-bottom: 10px
+  &__text
+    margin-bottom: 30px
+    &-p
+      font-weight: normal
+      font-size: 14px
+      line-height: 150%
+  &__button
+    margin-bottom: 80px
+    &-second
+      padding: 15px 51px
+
+.metro
+  display: flex
+  align-items: center
+  &__icon
+    width: 100%
+    height: 100%
+    object-fit: contain
+    &-wrapper
+      width: 16px
+      height: 16px
+      margin-right: 5px
+  &__name
+    position: relative
+    font-weight: normal
+    font-size: 14px
+    line-height: 150%
+    &::after
+      display: inline-block
+      position: relative
+      content: ''
+      right: -5px
+      bottom: 3px
+      width: 2px
+      height: 2px
+      border-radius: 5px
+      background-color: $primary
+      margin-right: 10px
+  &__walk
+    font-weight: normal
+    font-size: 14px
+    line-height: 150%
+    color: rgba(51, 107, 156, 0.6)
+.characteristics
+  position: relative
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  padding: 22px 17px 22px 9px
+  margin-bottom: 30px
+  &::after
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    height: 2px
+    background: rgba(190, 242, 255, 0.4)
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    height: 2px
+    background: rgba(190, 242, 255, 0.4)
+  &__item
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+  &__characteristic
+    font-weight: 600
+    font-size: 26px
+    line-height: 150%
+    color: $primary
+    &_small
+      font-weight: 600
+      font-size: 18px
+      line-height: 150%
+      color: $primary
+  &__name
+    font-weight: normal
+    font-size: 14px
+    line-height: 150%
+    text-align: center
+    color: rgba(51, 107, 156, 0.6)

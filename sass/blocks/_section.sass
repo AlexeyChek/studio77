@@ -1,0 +1,49 @@
+.section
+  position: relative
+  padding-top: 54px
+  &__header
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 0
+      right: calc(50% + 454px)
+      width: auto
+      height: 2px
+      background-color: $secondary
+    &-link
+      margin-left: 20px
+  &__container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-left: 220px
+  &__title
+    font-style: normal
+    width: 100%
+    font-weight: 600
+    font-size: 34px
+    line-height: 150%
+    color: #336B9C
+    z-index: 5
+    &::before
+      white-space: nowrap
+      overflow: hidden
+      left: 0
+      right: 0
+    &::after
+      content: 'Студии в Москве'
+      position: absolute
+      top: 18px
+      left: calc(50% - 1290px/2 + 292px)
+      right: 0
+      transform: translateY(-50%)
+      font-weight: 600
+      font-size: 96px
+      line-height: 150%
+      color: #BEF2FF
+      opacity: 0.2
+      z-index: -1
+      white-space: nowrap
+      overflow: hidden

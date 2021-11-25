@@ -1,0 +1,38 @@
+.header
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  z-index: 100
+  &__container
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 24px
+    padding-left: 0
+  &__logo
+    width: 276px
+    margin-right: 123px
+  &__nav
+    margin-right: 95px
+  &__phone
+    position: relative
+    padding-top: 11px
+    font-weight: normal
+    font-size: 14px
+    line-height: 150%
+    color: $primary
+    transition: 0.2s
+    &_strong
+      font-weight: 600
+  &__menu
+    display: flex
+    justify-content: space-between
+    &-close
+      display: none
+.burger
+  display: none

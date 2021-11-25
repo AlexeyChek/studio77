@@ -1,0 +1,56 @@
+.footer
+  background: #0E1C3F
+  padding: 0
+  &__container
+    display: flex
+    flex-direction: column
+    padding-left: 0
+    padding-top: 30px
+    padding-bottom: 13px
+  &__main
+    display: flex
+    justify-content: space-between
+    width: 100%
+    align-items: center
+    margin-bottom: 28px
+  &__logo
+    width: 240px
+  &__nav
+    padding-top: 16px
+    margin-right: 58px
+  &__link
+    font-style: 14px
+    line-height: 150%
+    color: $light
+  &__social
+    &-links
+      display: flex
+      justify-content: space-between
+      align-items: center
+      min-width: 209px
+      height: 26px
+      padding-top: 20px
+  &__last
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    font-size: 14px
+    line-height: 150%
+    color: rgba(255, 255, 255, 0.6)
+    padding: 10px 0 13px
+    &::before
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      content: ''
+      width: 100%
+      height: 1px
+      background-color: $light
+      opacity: 0.1
+  &__icon
+    fill: $light
+    opacity: 0.7
+    transition: 0.2s

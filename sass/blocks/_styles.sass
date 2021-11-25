@@ -1,0 +1,91 @@
+.styles
+  padding-top: 56px
+  margin-bottom: 75px
+  &__header
+    margin-bottom: 30px
+.style
+  position: relative
+  margin-bottom: 70px
+  &:nth-child(n + 4)
+    margin-bottom: 140px
+  &:nth-child(n + 8)
+    margin-bottom: 22px
+  &__container
+    position: relative
+    display: flex
+    justify-content: space-between
+  &__description
+    padding-top: 5px
+    &_even
+      margin-left: 80px
+    &_2
+      padding-top: 91px
+    &_3, &_5
+      padding-top: 24px
+    &_4
+      padding-top: 64px
+    &_6
+      padding-top: 0
+    &_7
+      padding-top: 51px
+    &_8
+      margin-right: 53%
+      padding: 70px 0
+  &__title
+    font-weight: 600
+    font-size: 26px
+    margin-bottom: 25px
+  &__text
+    &-p
+      font-size: 18px
+      &:not(:last-child)
+        margin-bottom: 27px
+  &__image
+    width: 100%
+    height: 100%
+    object-fit: cover
+    &-wrapper
+      flex-shrink: 0
+      height: 388px
+      margin-top: 70px
+      margin-bottom: 70px
+      overflow: hidden
+      &_1
+        margin-top: 76px
+      &_odd
+        width: 579px
+        margin-right: 81px
+      &_even
+        width: 630px
+        margin-left: 81px
+      &_4, &_6
+        margin-left: 73px
+  &__rectangle
+    top: 0
+    bottom: 0
+    &_odd
+      right: calc(50vw + 267px)
+    &_even
+      left: calc(50vw + 157px)
+    &_8
+      width: 250px
+      right: 0
+      left: auto
+  &__line
+    width: 20px
+    top: -70px
+    bottom: -70px
+    &_odd
+      left: 80px
+    &_even
+      right: 80px
+    &_1
+      height: 470px
+      top: auto
+    &_7
+      bottom: -22px
+    &_8
+      height: 20px
+      width: 290px
+      right: 191px
+      top: 93px

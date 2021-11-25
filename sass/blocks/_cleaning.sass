@@ -1,0 +1,74 @@
+.cleaning
+  margin-bottom: 70px
+  &__title
+    &::after
+      content: 'Клининг'
+  &__header
+    margin-bottom: 30px
+  &__body
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    z-index: 0
+  &__rectangle
+    height: 608px
+    top: 134px
+    left: calc(50% + 166px)
+    z-index: 0
+  &__line
+    &_vertical
+      width: 20px
+      height: 720px
+      right: 80px
+      top: -175px
+    &_horizontal
+      width: 92%
+      height: 20px
+      right: 51px
+      bottom: 116px
+  &__description
+    min-width: 659px
+    display: flex
+    flex-direction: column
+  &__text
+    max-width: 470px
+    margin-left: 80px
+    margin-bottom: 50px
+  &__phone
+    color: $primary
+    font-weight: 600
+  &__advantages
+    margin-left: 80px
+    margin-bottom: 60px
+  &__advantage
+    padding-right: 111px
+  &__photos
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 240px
+  &__photo
+    &-wrapper
+      height: 100%
+      max-width: 100%
+      z-index: 5
+      overflow: hidden
+      &_left
+        width: 238px
+      &_right
+        width: 391px
+      &_top
+        margin-top: 70px
+        margin-bottom: 110px
+      &_bottom
+        max-width: 572px
+        align-self: flex-end
+  &__images
+    align-self: flex-start
+    display: flex
+    flex-direction: column
+  &__image
+    width: 100%
+    height: 100%
+    object-fit: cover

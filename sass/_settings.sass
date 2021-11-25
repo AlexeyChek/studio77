@@ -1,0 +1,147 @@
+*
+  box-sizing: border-box
+  font-feature-settings: "locl" 0
+
+@font-face
+  font-family: 'Montserrat'
+  src: url('../fonts/Montserrat-Bold.woff2') format('woff2'), url('../fonts/Montserrat-Bold.woff') format('woff')
+  font-weight: bold
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Montserrat'
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2'), url('../fonts/Montserrat-Regular.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Montserrat'
+  src: url('../fonts/Montserrat-Medium.woff2') format('woff2'), url('../fonts/Montserrat-Medium.woff') format('woff')
+  font-weight: 500
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Montserrat'
+  src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'), url('../fonts/Montserrat-SemiBold.woff') format('woff')
+  font-weight: 600
+  font-style: normal
+  font-display: swap
+
+body
+  background-color: $bg
+  font-family: 'Montserrat', sans-serif
+  font-size: 14px
+  color: $primary
+a
+  cursor: pointer
+  text-decoration: none
+h1, h2, h3, h4, p
+  padding: 0
+  margin: 0
+.container
+  max-width: 1290px
+  margin: auto
+.nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-top: 11px
+  &__link
+    display: block
+    font-size: 14px
+    line-height: 150%
+    color: $primary
+    transition: 0.3s
+    position: relative
+    &:not(:last-child)
+      margin-right: 40px
+.background
+  &-rectangle
+    position: absolute
+    background: rgba(190, 242, 255, 0.4)
+    transform: matrix(-1, 0, 0, 1, 0, 0)
+    width: auto
+    left: 0
+    right: 0
+    z-index: -2
+  &-line
+    position: absolute
+    background: #9AEBFE
+    transform: matrix(-1, 0, 0, 1, 0, 0)
+    z-index: -1
+.p
+  font-size: 18px
+  line-height: 150%
+  &:not(:last-child)
+    margin-bottom: 27px
+  &_strong
+    font-weight: bold
+button
+  cursor: pointer
+  outline: none
+.button
+  cursor: pointer
+  outline: none
+  &-first
+    flex-shrink: 0
+    padding: 13px 38px
+    font-weight: 600
+    font-size: 14px
+    line-height: 150%
+    border: 2px solid #43C8FF
+    color: #43C8FF
+    background-color: #f5fdff
+    text-decoration: none
+    z-index: 5
+    transition: 0.2s
+  &-second
+    position: relative
+    padding: 14px 40px
+    font-weight: 600
+    font-size: 14px
+    line-height: 150%
+    color: $light
+    background: $icon-gradient
+    transition: 0.2s
+    z-index: 5
+    &-wrapper
+      display: flex
+      max-width: max-content
+      height: max-content
+      position: relative
+      padding: 0
+      background: transparent
+      border: none
+    &-bg
+      position: absolute
+      top: 9px
+      left: 9px
+      content: ''
+      width: 100%
+      height: 100%
+      border: 2px solid $secondary
+      z-index: 0
+.logo
+  &__image
+    width: 100%
+    height: 100%
+    object-fit: cover
+.privacy-policy
+  color: inherit
+
+.social
+  &-link
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 26px
+    height: 26px
+input
+  font-weight: 600
+  font-size: 16px
+  line-height: 150%
+  color: $primary
